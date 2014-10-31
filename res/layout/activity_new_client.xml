@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical" >
+        
+    <EditText
+        android:id="@+id/editClientName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/editClientName" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editDenominationClient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/editDenominationClient"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editDirecction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/editDirection" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/editNro"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="number" 
+            android:hint="@string/editNro"/>
+
+        <EditText
+            android:id="@+id/editZone"
+            android:layout_width="254dp"
+            android:layout_height="wrap_content"
+            android:ems="10" 
+            android:hint="@string/editZone"/>
+
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/editTelephone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone" 
+        android:hint="@string/editTelephone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Spinner
+            android:id="@+id/spinCanal"
+            android:layout_width="153dp"
+            android:layout_height="43dp" />
+
+        <Spinner
+            android:id="@+id/spinTipoLocal"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp" />
+
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/editRuta"
+        android:layout_width="73dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/editRuta"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btnSaveNewClient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btnSaveNewClient" />
+        
+        
+        
+    </LinearLayout>
+
+</RelativeLayout>

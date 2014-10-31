@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Siadis</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="btnAutenticar">Autenticar</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="detailClient">Detalle Cliente</string>
+    <string name="editCantidadPreVenta">Cantidad</string>
+    <string name="btnSendText">Enviar</string>
+    <string name="btnGetProducts">Productos</string>
+    <string name="edithSearchSale">Codigo Cliente</string>
+    <string name="textClientDataSale">Datos Cliente</string>
+    <string name="editCantSale">Cantidad Producto</string>
+    <string name="btnGetProductsSale">Enviar Productos</string>
+    <string name="btnAddProductList">Agregar Producto</string>
+
+    <string-array name="listProducts">
+        <item>PRODUCTO</item>
+        <item>Botella Especial</item>
+        <item>Botella Sesquicentenario</item>
+        <item>Botella Stout</item>
+        <item>Botella Bicentenario</item>
+        <item>Lata Especial</item>
+        <item>Lata Sesquicentenario</item>
+        <item>Botellin Especial</item>
+        <item>Botellin Sesquicentenario</item>
+        <item>Botellin Stout</item>
+        <item>Botellin Bicentenario</item>
+        <item>Botellin 33</item>
+        <item>Chopp Especial</item>
+        <item>Chopp Sesquicentenario</item>
+        <item>Chopp Bicentenario</item>
+        <item>Envase Canastillo</item>
+    </string-array>
+
+    <string name="textClientDataRecup">Detalle Cliente</string>
+    <string name="edithSearchRecup">Codigo Cliente</string>
+    <string name="editCantRecup">Cantidad Envases</string>
+    <string name="btnGetProductsRecup">Recuperar Envases</string>
+    <string name="btnAddEnvaList">Agregar Envase</string>
+
+    <string-array name="listEnvases">
+        <item>ENVASE</item>
+        <item>Botella</item>
+        <item>Caja</item>
+    </string-array>
+    
+    <string-array name="listTipoVenta">
+        <item>TIPO VENTA</item>
+        <item>Efectivo</item>
+        <item>Consignacion</item>
+        <item>Bonificacion</item>
+        <item>Devolucion</item>
+    </string-array>
+    
+
+    <string name="title_activity_new_client">Registro Nuevo Cliente</string>
+    <string name="editClientName">Nombre Completo Cliente</string>
+    <string name="editDenominationClient">Denominacion Razon Social</string>
+    <string name="editDirection">Direccion Cliente</string>
+    <string name="editNro">Numero</string>
+    <string name="editZone">Zona</string>
+    <string name="editRuta">Ruta</string>
+    <string name="editTelephone">Teléfonos</string>
+    <string name="btnSaveNewClient">Guardar Datos Cliente</string>
+    <string name="editSearchHistory">Criterio de Busqueda</string>
+    <string name="btnUpdateHistoryDist">Actualizar</string>
+
+    <string-array name="listCanal">
+        <item>CANAL</item>
+        <item>Comidas y Bebidas</item>
+        <item>servicios</item>
+        <item>Hospedaje</item>
+        <item>Hogar</item>
+        <item>Otros</item>
+    </string-array>
+    <string-array name="listTipoLocal">
+        <item>TIPO-LOCAL</item>
+        <item>Tienda</item>
+        <item>Agencia</item>
+        <item>Almacen</item>
+        <item>Alojamiento</item>
+        <item>Bar</item>
+        <item>Bazar</item>
+        <item>Billar</item>
+        <item>Broasteria</item>
+        <item>Cafeteria</item>
+        <item>Cantina</item>
+        <item>Carniceria</item>
+        <item>Casa de Huespedes</item>
+        <item>Chicharroneria</item>
+        <item>Choriceria</item>
+        <item>Churrasqueria</item>
+        <item>Comedor Popular</item>
+        <item>Comida Rapida</item>
+        <item>Discoteca</item>
+        <item>Facultad</item>
+        <item>Hostal</item>
+        <item>Hotel</item>
+        <item>Jugueras</item>
+        <item>Karaoque</item>
+        <item>Kiosco</item>
+        <item>Licoreria</item>
+        <item>Local Cristiano</item>
+        <item>Minimercado</item>
+        <item>Motel</item>
+        <item>Night Club</item>
+        <item>Pension</item>
+        <item>Pizzeria</item>
+        <item>Residencial</item>
+        <item>Restaurant</item>
+        <item>Salon de Eventos</item>
+        <item>Salteñeria</item>
+        <item>Supermercado</item>
+    </string-array>
+
+    <string name="textLabelCajas">CAJAS</string>
+    <string name="textLabelBotellas">BOTELLAS</string>
+    
+    <string name="title_activity_sale">Venta Bonificación</string>
+
+</resources>

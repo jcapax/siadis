@@ -1,0 +1,316 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    tools:context="${relativePackage}.${activityClass}"
+    tools:ignore="MergeRootFrame" >
+
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="508dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+				
+                
+                <LinearLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal" >
+
+                    
+                    
+                    
+				
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                      	android:scrollbars="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <EditText
+                                android:id="@+id/editSearchSale"
+                                android:layout_width="102dp"
+                                android:layout_height="match_parent"
+                                android:ems="10"
+                                android:hint="@string/edithSearchSale"
+                                android:inputType="number"
+                                android:textSize="20sp" >
+
+                                <requestFocus />
+                            </EditText>
+
+                            <Button
+                                android:id="@+id/btnSearchSale"
+                                android:layout_width="92dp"
+                                android:layout_height="48dp"
+                                android:drawableBottom="@drawable/ic_action_search" />
+                            
+                            <Spinner
+	                            android:id="@+id/spinListTipoVenta"
+	                            android:layout_width="wrap_content"
+	                            android:layout_height="38dp"/>
+                            
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/textClientDataSale"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="top"
+                            android:textColor="@color/blue"
+                            android:textSize="20sp" />
+
+                        <Spinner
+                            android:id="@+id/spinListProductsSale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="38dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <EditText
+                                android:id="@+id/editCantSale"
+                                android:layout_width="108dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:ems="10"
+                                android:hint="@string/editCantSale"
+                                android:inputType="number" />
+
+                            <Button
+                                android:id="@+id/btnAddProductList"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/btnAddProductList" />
+                        </LinearLayout>
+
+                        <ListView
+                            android:id="@+id/listProductsSale"
+                            android:scrollbars="vertical"                           	
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+                        </ListView>
+
+                        <Button
+                            android:id="@+id/btnGetProductsSale"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:gravity="center"
+                            android:text="@string/btnGetProductsSale" 
+                             
+                            android:textColor="#FF0000"
+                        />
+                    </LinearLayout>
+                
+                    
+                </LinearLayout>
+                
+                
+
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+				        android:layout_width="0dp"
+				        android:layout_height="fill_parent"
+				        android:layout_weight="1"
+				        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <EditText
+                                android:id="@+id/editSearchRecup"
+                                android:layout_width="0dip"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3.06"
+                                android:ems="10"
+                                android:hint="@string/edithSearchSale"
+                                android:inputType="number"
+                                android:textSize="25sp" />
+
+                            <Button
+                                android:id="@+id/btnSearchrecup"
+                                android:layout_width="wrap_content"
+                                android:layout_height="48dp"
+                                android:layout_weight="1.81"
+                                android:drawableBottom="@drawable/ic_action_search" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/textClientDataRecup"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/blue"
+                            android:textSize="20sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <EditText
+                                android:id="@+id/editBotellas"
+                                android:layout_width="108dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.06"
+                                android:ems="10"
+                                android:inputType="number" 
+                                android:textSize="35sp"/>
+
+                            <TextView
+                                android:id="@+id/txtLabelBotellas"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.02"
+                                android:text="@string/textLabelBotellas"
+                                android:textColor="@color/greenStrong" 
+                                android:textSize="30sp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <EditText
+                                android:id="@+id/editCajas"
+                                android:layout_width="108dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.06"
+                                android:ems="10"
+                                android:inputType="number" 
+                                android:textSize="35sp"/>
+
+                            <TextView
+                                android:id="@+id/textLabelCajas"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.03"
+                                android:text="@string/textLabelCajas"
+                                android:textColor="@color/greenStrong"
+                                android:textSize="30sp" />
+
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/btnGetProductsRecup"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:gravity="center"
+                            android:text="@string/btnGetProductsRecup" 
+                            android:textColor="@color/red"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <EditText
+                                android:id="@+id/editSearchHistory"
+                                android:layout_width="0dip"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3.06"
+                                android:ems="10"
+                                android:hint="@string/editSearchHistory" />
+
+                            <Button
+                                android:id="@+id/btnSearchHistory"
+                                android:layout_width="wrap_content"
+                                android:layout_height="48dp"
+                                android:drawableBottom="@drawable/ic_action_search" />
+                        </LinearLayout>
+
+                        <ListView
+                            android:id="@+id/listViewClientsHistory"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"                                                       
+                            android:background="#0B610B" >
+                        </ListView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+*************************************************************************************************
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/listViewHistoryMove"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="3.06"            
+            android:background="#045FB4" >
+        </ListView>
+
+        <Button
+            android:id="@+id/btnUpdateHistoryDist"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:text="@string/btnUpdateHistoryDist"
+            android:background="#0B610B"  />
+
+    </LinearLayout>    
+
+
+*************************************************************************************************			        
+                </LinearLayout>
+
+</FrameLayout>
+
+        </LinearLayout>
+    </TabHost>
+
+</FrameLayout>
+
